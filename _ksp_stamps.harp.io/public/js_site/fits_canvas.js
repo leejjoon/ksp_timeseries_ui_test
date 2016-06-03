@@ -88,10 +88,11 @@ function canvas_init() {
   stage.addChild(bitmap);
   bitmap.setTransform(0, 0, 2, 2);
 
-  wait_text = new createjs.Text("Loading fits cube...", "12px Arial", "#ffffff");
+  wait_text = new createjs.Text("Loading fits cube...", "12px Arial", "#000000");
   wait_text.x = 5;
   wait_text.y = 32;
   stage.addChild(wait_text);
 
   cb_loaded = function () {stage.removeChild(wait_text);}
+
 }
