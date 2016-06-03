@@ -8,7 +8,13 @@ var images_started = [];
 
 var current_frame = 0;
 
+var ready = false;
+
 var set_frame = function(frame) {
+    if (ready === false) {
+      return;
+    }
+
     current_frame = frame;
 
     if (typeof images_started[frame] != 'undefined') {
@@ -66,6 +72,8 @@ var cb_frames = function(pixels) {
 var callback = function() {
   var hdu = this.getHDU();
   dataunit = hdu.data;
+
+  ready = true;
 
   getFrames(dataunit, 0, 1, cb_frame1);
 

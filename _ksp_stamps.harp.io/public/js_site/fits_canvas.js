@@ -38,6 +38,11 @@ function update_pixel(pixels) {
   var i;
   var ii;
 
+  if (pixels.length == undefined) {
+     console.log("pixels of undefined length is given:", pixels);
+     return
+  }
+
   var scaler = get_scaler(cmin, cmax);
 
   var lut = get_lut();
