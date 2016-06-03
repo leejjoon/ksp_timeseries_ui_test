@@ -1,15 +1,15 @@
 doctype
 html
   head
-    link(rel="stylesheet" href="/css/jquery-ui.css")
-    script(src="/js/jquery.js")
-    script(src="/js/jquery-ui.js")
-    script(src="/js/easeljs-0.8.2.min.js")
-    script(src="/js/fits.js")
-    script(src="/js/plotly-latest.min.js")
+    link(rel="stylesheet" href="#{ root }/css/jquery-ui.css")
+    script(src="#{ root }/js/jquery.js")
+    script(src="#{ root }/js/jquery-ui.js")
+    script(src="#{ root }/js/easeljs-0.8.2.min.js")
+    script(src="#{ root }/js/fits.js")
+    script(src="#{ root }/js/plotly-latest.min.js")
 
-    script(src="/js/three.min.js")
-    script(src="/js/three_lut.js")
+    script(src="#{ root }/js/three.min.js")
+    script(src="#{ root }/js/three_lut.js")
 
 
   body
@@ -36,10 +36,10 @@ html
 
     p#image_text
 
-    script(src="/js_site/minmax_update.js")
-    script(src="/js_site/lc_plot.js")
-    script(src="/js_site/fits_cube.js")
-    script(src="/js_site/fits_canvas.js")
+    script(src="#{ root }/js_site/minmax_update.js")
+    script(src="#{ root }/js_site/lc_plot.js")
+    script(src="#{ root }/js_site/fits_cube.js")
+    script(src="#{ root }/js_site/fits_canvas.js")
 
     script.
       plot_lc(rawDataURL);

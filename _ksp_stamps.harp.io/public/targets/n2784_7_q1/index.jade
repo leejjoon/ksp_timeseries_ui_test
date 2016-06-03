@@ -1,5 +1,5 @@
 for article, slug in public.targets.n2784_7_q1._data
   if (slug != "index")
-    a(href="/targets/n2784_7_q1/#{ slug }.html")
+    a(href="#{ root }/targets/n2784_7_q1/#{ slug }.html")
       h2= article.title
-      img(src="/targets/n2784_7_q1/#{ slug }.lc.png", style="width:300px;")
+      img(src="#{ root }/targets/n2784_7_q1/#{ slug }.lc.png", style="width:300px;")
