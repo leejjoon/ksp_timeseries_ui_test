@@ -74,6 +74,7 @@ var callback = function() {
   dataunit = hdu.data;
 
   ready = true;
+  cb_loaded();
 
   getFrames(dataunit, 0, 1, cb_frame1);
 
