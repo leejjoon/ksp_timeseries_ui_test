@@ -1,0 +1,5 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/css/jquery-ui.css"><script src="/js/jquery.js"></script><script src="/js/jquery-ui.js"></script><script src="/js/easeljs-0.8.2.min.js"></script><script src="/js/fits.js"></script><script src="/js/plotly-latest.min.js"></script><script src="/js/three.min.js"></script><script src="/js/three_lut.js"></script></head><body><h1></h1><div><span>----</span></div><h1>Stamps.</h1><h3>This is yours to own. Enjoy.</h3><div><form id="minmax"><span>min</span><input type="text" id="fitsmin" value="-100"><span>max</span><input type="text" id="fitsmax" value="100"><input type="submit" value="set"><button onclick="change_colormap(); set_frame(current_frame)">Change LUT</button></form></div><p id="image_text"></p><script src="/js_site/minmax_update.js"></script><script src="/js_site/lc_plot.js"></script><script src="/js_site/fits_cube.js"></script><script src="/js_site/fits_canvas.js"></script><script>plot_lc(rawDataURL);
+
+var fits = new FITS(url, callback);
+
+$( document ).ready(canvas_init)</script></body></html>
